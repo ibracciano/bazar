@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .liStyle {
+    @apply text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300;
+  }
+  .arrowStyle {
+    @apply w-14 h-12 border-[1px] border-gray-700 flex items-center justify-center hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300;
+  }
+  .hoverStyle {
+    @apply hover:text-white duration-300 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .heightFull {
+    min-height: calc(100vh - 30vh);
+  }
+}
